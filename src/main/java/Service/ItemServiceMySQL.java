@@ -1,4 +1,4 @@
-package org.generation.ItemsAPI.Service;
+package org.generation.ItemsAPI.service;
 
 import org.generation.ItemsAPI.repository.ItemRepository;
 import org.generation.ItemsAPI.repository.entity.Item;
