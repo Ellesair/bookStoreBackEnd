@@ -1,18 +1,18 @@
 package org.generation.ItemsAPI.repository.entity;
 
-import javax.persistence.Column;
+import org.generation.ItemsAPI.controller.dto.ItemDto;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.MapKey;
 
 @Entity
 public class Item
 {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private Integer id;
+    private Integer id = null;
 
     private String name;
 
@@ -22,6 +22,13 @@ public class Item
 
     public Item()
     {
+    }
+
+    public Item( ItemDto itemDto )
+    {
+        this.name = itemDto.getName();
+        this.description = itemDto.getDescription();
+        this.imageUrl = itemDto.getImageUrl();
     }
 
     public Integer getId()
