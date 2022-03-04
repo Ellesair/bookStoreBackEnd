@@ -42,7 +42,7 @@ public class ItemServiceMySQL
     @Override
     public Item findById( int itemId )
     {
-        //TODO implement this method
-        return null;
+        //noinspection OptionalGetWithoutIsPresent
+        return itemRepository.findById( itemId ).get();
     }
 }
