@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html xmlns:th="http://www.thymeleaf.org"><head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link th:href="@{/styles/cssandjs/styles.css}" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
@@ -112,7 +111,7 @@
             <p>I began my journey in the Generation Web Developer program seeking to increase my knowledge of software development concepts and practices, and eventually achieve employment as a software engineer for a stable, growing company. Working on this project with a group of such talented individuals has given me a sense of pride and accomplishment, and I feel that I am closer to achieving my dream of becoming a full-stack web developer through our combined efforts. I’m a graduate of Southwestern Illinois College, where I earned an associate of science degree in Computer Science. My hobbies include reading a good book, cycling through my local neighborhood, and playing videogames with friends.</p>
         </div>
         <div class="col-6 px-5 py-5 user-bio">
-            <img class="imgs" src="img/user.png">
+            <img class="imgs" src="https://media-exp1.licdn.com/dms/image/D4E35AQH_IXbaREfvSw/profile-framedphoto-shrink_200_200/0/1641930803838?e=1646499600&v=beta&t=Wu1xcm3i1r_yrd83g7cKrl6n6GLQR2ByeNprC3niIEo.png">
             <h4>Ermoni Osborne</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
@@ -154,7 +153,8 @@
 
 <!-- End Footer -->
 
-<script src="index.js"></script>
+
+<script type="text/javascript" th:src="@{/js/cssandjs/index.js}"></script>
 
 </body>
 </html>
