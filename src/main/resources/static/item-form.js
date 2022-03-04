@@ -1,5 +1,5 @@
 // Initialize a new ItemsController with currentId set to 0
-const itemsController = new itemsController(0);
+const itemsController = new ItemsController(0);
 
 // Select the New Item Form
 const newItemForm = document.querySelector("form");
