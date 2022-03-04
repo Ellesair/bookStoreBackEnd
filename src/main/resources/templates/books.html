@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -128,16 +128,16 @@
     <div class="footer-links">
       <a href="#">Social Media</a>
       <a href="#">Links</a>
-      <a class="bold-link" href="index.html">Novel Galaxy</a>
+      <a class="bold-link" href="/index">Novel Galaxy</a>
     </div>
   </footer>
 </div>
 
 <!-- End Footer -->
-<script src="resources/static/itemsController.js"></script>
-<script src="resources/static/items.js"></script>
-<script src="resources/static/index.js"></script>
-<script type="text/javascript" th:src="@{/js/cssandjs/actions.js}"></script>
+
+<script type="text/javascript" th:src="@{/js/cssandjs/itemsController.js}"></script>
+<script type="text/javascript" th:src="@{/js/cssandjs/items.js}"></script>
+<script type="text/javascript" th:src="@{/js/cssandjs/index.js}"></script>
 
 
 </body>
